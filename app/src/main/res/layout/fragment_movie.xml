@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.poras.passionate.awemovies.MovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.poras.passionate.awemovies.adapter.MovieRecyclerView
+        android:id="@+id/movieRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/grid_layout_animation"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/tv_no_internet"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/network_alert"
+        android:visibility="gone" />
+
+</FrameLayout>
